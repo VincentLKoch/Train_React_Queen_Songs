@@ -1,22 +1,81 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  align-items: flex-start;
+  overflow: auto;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  height: auto;
   min-height: 100vh;
+}
+
+.container {
+  padding-bottom: 0px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  background-color: #282c34;
+  height: 65px;
+  min-width: 0;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.split {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+  width: auto;
+  padding: 6px 17px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.song-list {
+  /* background-color: lightgray; */
+  width: 500px;
+  height: 800px;
+  overflow: scroll;
+  border: 7px solid black;
+  padding: 0px; /* todo del */
+  margin: 0 -17px;
+  border-radius: 14px;
+  box-shadow: 0 0 5px gold inset;
+  text-align: left;
+}
+
+.song-row {
+  background-color: #e0e0e0;
+  padding: 8px 0 8px 0;
+  border-bottom: 3px #ccc dotted;
+}
+
+/* search Bar : */
+.searchBar {
+  /* container */
+  width: 535px;
+  padding: 6px 17px;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  border: 7px solid black;
+  padding: 0 10px;
+  margin: 0 -17px;
+  border-radius: 14px;
+  box-shadow: 0 0 5px gold inset;
+  text-align: center;
 }
