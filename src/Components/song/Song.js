@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export class Song extends Component {
   getStyle = selected => {
-    return selected && !this.props.isAllSongList
+    return selected && !this.props.isSelectedList
       ? { backgroundColor: "lightblue" }
       : {};
   };

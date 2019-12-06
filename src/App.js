@@ -1,9 +1,9 @@
 import React from "react";
 
 // Components :
-import SongList from "./Components/SongList";
+import SongList from "./Components/song/SongList";
 import Header from "./Components/layout/Header";
-import { SearchBar } from "./Components/SearchBar";
+import { SearchBar } from "./Components/song/SearchBar";
 
 import { allSongs } from "./songs";
 import "./App.css";
@@ -22,13 +22,7 @@ class App extends React.Component {
       allSongList: allSongsObject,
       selectedSongList: []
     };
-    this.selectedSongList = [
-      {
-        id: 3,
-        title: "A Human Body",
-        selected: true
-      }
-    ];
+    this.selectedSongShadowList = [];
     /*
       this.selectedSongList = this.state.selectedSongList if there is no filter
       it stock the complete list of selected song we then filter from it
@@ -40,8 +34,8 @@ class App extends React.Component {
     this.setState({
       allSongList: this.state.allSongList.map(song => {
         if (song.id === id) {
-          song.selected = !song.selected; /* update song in selected list (add or remove) */
           this.handleSongInSelectedList(song);
+          song.selected = !song.selected; // song is now selected or unselected
         }
         return song;
       })
@@ -50,13 +44,15 @@ class App extends React.Component {
 
   /* add or remove song in selected list */
   handleSongInSelectedList = song => {
-    if (song.selected) {
-      //add it
+    if (!song.selected) {
+      console.log("Add Song");
+      //Adding :
+      this.selectedSongShadowList = [...this.selectedSongShadowList, song];
       this.setState({
-        selectedSongList: [...this.state.selectedSongList, song].sort()
+        selectedSongList: [...this.selectedSongShadowList]
       });
-      this.selectedSongList = [...this.selectedSongList, song].sort();
     } else {
+      console.log("Remove Song");
       //filter it out
       this.setState({
         selectedSongList: [
@@ -65,7 +61,8 @@ class App extends React.Component {
           )
         ]
       });
-      this.selectedSongList = this.selectedSongList.filter(
+      //update selectedSongList
+      this.selectedSongShadowList = this.selectedSongShadowList.filter(
         songItem => songItem.id !== song.id
       );
     }
@@ -73,17 +70,18 @@ class App extends React.Component {
 
   // filterList with search bar input:
   filterList = (title, isSelectedSongList) => {
+    console.log("IN filterList");
     /* if the search bar is for filtering the selected song list or the other */
     if (isSelectedSongList) {
       this.setState({
-        selectedSongList: this.selectedSongList.filter(songItem => {
-          return songItem.title.toUpperCase().includes(title.toUpperCase());
+        selectedSongList: this.selectedSongShadowList.filter(songItem => {
+          return songItem.title.toLowerCase().includes(title.toLowerCase());
         })
       });
     } else {
       this.setState({
         allSongList: allSongsObject.filter(songItem => {
-          return songItem.title.toUpperCase().includes(title.toUpperCase());
+          return songItem.title.toLowerCase().includes(title.toLowerCase());
         })
       });
     }
@@ -95,22 +93,23 @@ class App extends React.Component {
         <Header />
         <div className="container">
           <div className="split">
-            {/* Left Part */}
+            {/* Left Part : all songs */}
             <SearchBar
               isSelectedSongList={false}
               filterList={this.filterList}
             />
             <div className="song-list">
               <SongList
-                isAllSongList={false}
+                isSelectedList={false}
                 songlist={this.state.allSongList}
                 selectSong={this.selectSong}
               />
             </div>
           </div>
           <div className="split">
-            {/* Middle Part */}
+            {/* Middle Part : logo, player and valided button */}
             {/* TODO Add queen logo */}
+            {/* I suggest to launch it during the correction to have a good time ! :) */}
             <iframe
               title="Spotify Queen"
               src="https://open.spotify.com/embed/album/6i6folBtxKV28WX3msQ4FE"
@@ -123,12 +122,12 @@ class App extends React.Component {
             <i>for inspiration purpose</i>
             {/* TODO add submit button alert */}
           </div>
-          {/* Right Part */}
+          {/* Right Part : selected song */}
           <div className="split">
             <SearchBar isSelectedSongList={true} filterList={this.filterList} />
             <div className="song-list">
               <SongList
-                isAllSongList={true}
+                isSelectedList={true}
                 songlist={this.state.selectedSongList}
                 selectSong={this.selectSong}
               />

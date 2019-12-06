@@ -8,7 +8,6 @@ export class SearchBar extends Component {
   onChange = e => {
     this.setState({ title: e.target.value });
     this.props.filterList(e.target.value, this.props.isSelectedSongList);
-    /* Note : We can replace e.target.value by this.props.title if we await the setState */
   };
 
   render() {
