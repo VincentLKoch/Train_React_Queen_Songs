@@ -50,6 +50,7 @@ body {
   align-items: center;
   position: relative;
   padding: 0 0 7px;
+  color: white
 }
 
 .song-list {
@@ -95,7 +96,7 @@ body {
   position: relative;
   display: inline-block;
   width: 100px;
-  height: 34px;
+  height: 35px;
 }
 
 /* definition of the slider */
@@ -106,7 +107,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ca2222;
+  background-color: black;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
@@ -128,7 +129,7 @@ body {
 
 /* if the input is a slider and is check aka if it's "on" */
 input:checked + .slider {
-  background-color: #2ab934;
+  background-color: goldenrod;
 }
 
 /* if we turn on => moving the cursor */

@@ -128,9 +128,8 @@ class App extends React.Component {
             </div>
           </div>
           <div className="split">
-            <img id="logo" src="../images/logo_queen.png"></img>
+            <img alt="logo" id="logo" src="../images/logo_queen.png"></img>
             {/* Middle Part : logo, player and valided button */}
-            {/* TODO Add queen logo */}
             {/* I suggest to launch it during the correction to have a good time ! :) */}
             <div className="playing-frame">
               <iframe
