@@ -153,3 +153,32 @@ input:checked + .slider:before {
 input:checked + .slider:after {
   content: "Reset ON";
 }
+
+/* Define the logo in the middle */
+#logo {
+  width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Design the button Validate */
+#validate {
+  width: 100px;
+  height: 30px;
+  background-color: goldenrod;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-color: black;
+  border-width: 5px;
+}
+
+#validate:hover {
+  width: 120px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-color: goldenrod;
+  border-width: 5px;
+  margin-bottom: 10px;
+}

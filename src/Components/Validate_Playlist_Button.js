@@ -14,6 +14,7 @@ export class Validate_Playlist_Button extends Component {
     return (
       <div>
         <button
+          id="validate"
           type="button"
           onClick={this.props.validatePlaylist.bind(
             this,
