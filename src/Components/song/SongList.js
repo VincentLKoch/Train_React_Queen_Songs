@@ -31,7 +31,18 @@ class SongList extends Component {
 
 // PropsTypes
 SongList.propTypes = {
-  songlist: PropTypes.arrayOf(PropTypes.object).isRequired
+  isSelectedList: PropTypes.bool.isRequired,
+
+  songlist: PropTypes.arrayOf(
+    PropTypes.shape({
+      //shape of Song object
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      selected: PropTypes.bool.isRequired
+    }).isRequired
+  ).isRequired,
+
+  selectSong: PropTypes.func.isRequired // function to call when song is selected
 };
 
 export default SongList;

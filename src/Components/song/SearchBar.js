@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 export class SearchBar extends Component {
   state = {
@@ -27,5 +28,11 @@ export class SearchBar extends Component {
     );
   }
 }
+
+// PropsTypes
+SearchBar.propTypes = {
+  isSelectedSongList: PropTypes.bool.isRequired,
+  filterList: PropTypes.func.isRequired
+};
 
 export default SearchBar;

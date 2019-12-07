@@ -16,8 +16,8 @@ for (let it = 0; it < allSongs.length; it++) {
 }
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       allSongList: allSongsObject,
@@ -43,7 +43,8 @@ class App extends React.Component {
     });
   };
 
-  /* add or remove song in selected list */
+  /* add or remove song in selected list
+  can be combine with selectSong but it will be a bit ugly */
   handleSongInSelectedList = song => {
     if (!song.selected) {
       // Adding :
@@ -85,6 +86,7 @@ class App extends React.Component {
     }
   };
 
+  // When we press the submit button
   validatePlaylist = reset => {
     let output = this.state.selectedSongList.map(song => {
       return "\n" + song.title;

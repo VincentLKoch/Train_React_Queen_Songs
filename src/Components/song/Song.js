@@ -30,7 +30,15 @@ export class Song extends Component {
 
 // PropsTypes
 Song.propTypes = {
-  song: PropTypes.object.isRequired
+  song: PropTypes.shape({
+    //shape of Song object
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    selected: PropTypes.bool.isRequired
+  }).isRequired,
+
+  isSelectedList: PropTypes.bool.isRequired,
+  selectSong: PropTypes.func.isRequired // function to call when song is selected
 };
 
 export default Song;

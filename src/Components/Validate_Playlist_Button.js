@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 export class Validate_Playlist_Button extends Component {
-  static propTypes = {
-    validatePlaylist: PropTypes.func.isRequired
-  };
-
   state = {
     resetChecked: false
   };
@@ -38,5 +34,10 @@ export class Validate_Playlist_Button extends Component {
     );
   }
 }
+
+// PropsTypes
+Validate_Playlist_Button.propTypes = {
+  validatePlaylist: PropTypes.func.isRequired // onClick function call
+};
 
 export default Validate_Playlist_Button;
