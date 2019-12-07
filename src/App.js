@@ -144,9 +144,7 @@ class App extends React.Component {
               ></iframe>
               <i>for inspiration purpose</i>
             </div>
-            <div className="validate-button">
               <ValidatePlaylistButton validatePlaylist={this.validatePlaylist} />
-            </div>
           </div>
           {/* Right Part : selected song */}
           <div className="split">
