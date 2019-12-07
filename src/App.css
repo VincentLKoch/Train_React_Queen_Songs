@@ -1,22 +1,155 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-items: flex-start;
+  overflow: auto;
+  justify-content: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  height: auto;
+  min-height: 100vh;
+}
+
+.container {
+  padding-bottom: 0px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  background-color: #282c34;
+  height: 65px;
+  min-width: 0;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+  width: auto;
+  padding: 6px 17px;
+  align-items: center;
+}
+
+.playing-frame {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: center;
+  position: relative;
+  padding: 0 0 7px;
+}
+
+.song-list {
+  background-color: #f0f8ff;
+  width: 500px;
+  height: 800px;
+  overflow: scroll;
+  border: 7px solid black;
+  margin: 0 -17px;
+  border-radius: 14px;
+  box-shadow: 0 0 5px gold inset;
+  text-align: left;
+}
+
+.song-row {
+  background-color: #e0e0e0;
+  padding: 8px 0 8px 0;
+  border-bottom: 3px #ccc dotted;
+}
+
+/* search Bar : */
+.searchBar {
+  /* container */
+  width: 535px;
+  padding: 6px 17px;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  border: 7px solid black;
+  padding: 0 10px;
+  margin: 0 -17px;
+  border-radius: 14px;
+  box-shadow: 0 0 5px gold inset;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+/* Following CSS is to have a nice switch, adapted from https://stackoverflow.com/a/39846603 : */
+
+/* definition of the container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 34px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* definition of the slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ca2222;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* cursor */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* if the input is a slider and is check aka if it's "on" */
+input:checked + .slider {
+  background-color: #2ab934;
+}
+
+/* if we turn on => moving the cursor */
+input:checked + .slider:before {
+  transform: translateX(66px);
+}
+
+/* text in the middle */
+.slider:after {
+  content: "Reset OFF";
   color: white;
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
 }
 
-.App-link {
-  color: #09d3ac;
+/* if the input is a slider and is Not check aka if it's "off" */
+input:checked + .slider:after {
+  content: "Reset ON";
 }
