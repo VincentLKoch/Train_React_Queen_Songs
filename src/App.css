@@ -43,13 +43,21 @@ body {
   align-items: center;
 }
 
+.playing-frame {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: center;
+  position: relative;
+  padding: 0 0 7px;
+}
+
 .song-list {
-  /* background-color: lightgray; */
+  background-color: #f0f8ff;
   width: 500px;
   height: 800px;
   overflow: scroll;
   border: 7px solid black;
-  padding: 0px; /* todo del */
   margin: 0 -17px;
   border-radius: 14px;
   box-shadow: 0 0 5px gold inset;
@@ -78,4 +86,70 @@ body {
   border-radius: 14px;
   box-shadow: 0 0 5px gold inset;
   text-align: center;
+}
+
+/* Following CSS is to have a nice switch, adapted from https://stackoverflow.com/a/39846603 : */
+
+/* definition of the container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 34px;
+}
+
+/* definition of the slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ca2222;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* cursor */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* if the input is a slider and is check aka if it's "on" */
+input:checked + .slider {
+  background-color: #2ab934;
+}
+
+/* if we turn on => moving the cursor */
+input:checked + .slider:before {
+  transform: translateX(66px);
+}
+
+/* text in the middle */
+.slider:after {
+  content: "Reset OFF";
+  color: white;
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+/* if the input is a slider and is Not check aka if it's "off" */
+input:checked + .slider:after {
+  content: "Reset ON";
 }

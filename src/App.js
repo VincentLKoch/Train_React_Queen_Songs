@@ -1,8 +1,9 @@
 import React from "react";
 
 // Components :
-import SongList from "./Components/song/SongList";
+import ValidatePlaylistButton from "./Components/Validate_Playlist_Button";
 import Header from "./Components/layout/Header";
+import SongList from "./Components/song/SongList";
 import { SearchBar } from "./Components/song/SearchBar";
 
 import { allSongs } from "./songs";
@@ -22,11 +23,11 @@ class App extends React.Component {
       allSongList: allSongsObject,
       selectedSongList: []
     };
-    this.selectedSongShadowList = [];
     /*
-      this.selectedSongList = this.state.selectedSongList if there is no filter
-      it stock the complete list of selected song we then filter from it
+    this.selectedSongShadowList = this.state.selectedSongList if there is no filter
+    it stock the complete list of selected song, we use it to filter selectedSongList
     */
+    this.selectedSongShadowList = [];
   }
 
   //Toggle selectSong song
@@ -45,15 +46,13 @@ class App extends React.Component {
   /* add or remove song in selected list */
   handleSongInSelectedList = song => {
     if (!song.selected) {
-      console.log("Add Song");
-      //Adding :
+      // Adding :
       this.selectedSongShadowList = [...this.selectedSongShadowList, song];
       this.setState({
         selectedSongList: [...this.selectedSongShadowList]
       });
     } else {
-      console.log("Remove Song");
-      //filter it out
+      // Removing
       this.setState({
         selectedSongList: [
           ...this.state.selectedSongList.filter(
@@ -61,7 +60,7 @@ class App extends React.Component {
           )
         ]
       });
-      //update selectedSongList
+      //update selectedSongShadowList
       this.selectedSongShadowList = this.selectedSongShadowList.filter(
         songItem => songItem.id !== song.id
       );
@@ -70,7 +69,6 @@ class App extends React.Component {
 
   // filterList with search bar input:
   filterList = (title, isSelectedSongList) => {
-    console.log("IN filterList");
     /* if the search bar is for filtering the selected song list or the other */
     if (isSelectedSongList) {
       this.setState({
@@ -82,6 +80,27 @@ class App extends React.Component {
       this.setState({
         allSongList: allSongsObject.filter(songItem => {
           return songItem.title.toLowerCase().includes(title.toLowerCase());
+        })
+      });
+    }
+  };
+
+  validatePlaylist = reset => {
+    let output = this.state.selectedSongList.map(song => {
+      return "\n" + song.title;
+    });
+    output[0] = output[0].substring(1); /* remove the first \n */
+    alert(output);
+
+    if (reset) {
+      // Reset all song selected
+      this.selectedSongShadowList = [];
+
+      this.setState({
+        selectedSongList: [],
+        allSongList: this.state.allSongList.map(song => {
+          song.selected = false;
+          return song;
         })
       });
     }
@@ -110,17 +129,19 @@ class App extends React.Component {
             {/* Middle Part : logo, player and valided button */}
             {/* TODO Add queen logo */}
             {/* I suggest to launch it during the correction to have a good time ! :) */}
-            <iframe
-              title="Spotify Queen"
-              src="https://open.spotify.com/embed/album/6i6folBtxKV28WX3msQ4FE"
-              width="300"
-              height="380"
-              frameBorder="2px"
-              allowtransparency="true"
-              allow="encrypted-media"
-            ></iframe>
-            <i>for inspiration purpose</i>
-            {/* TODO add submit button alert */}
+            <div className="playing-frame">
+              <iframe
+                title="Spotify Queen"
+                src="https://open.spotify.com/embed/album/6i6folBtxKV28WX3msQ4FE"
+                width="300"
+                height="380"
+                frameBorder="2px"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+              <i>for inspiration purpose</i>
+            </div>
+            <ValidatePlaylistButton validatePlaylist={this.validatePlaylist} />
           </div>
           {/* Right Part : selected song */}
           <div className="split">
