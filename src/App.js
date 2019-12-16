@@ -44,7 +44,7 @@ class App extends React.Component {
   };
 
   /* add or remove song in selected list
-  can be combine with selectSong but it will be a bit ugly */
+  Can be combine with selectSong but it will be a bit ugly */
   handleSongInSelectedList = song => {
     if (!song.selected) {
       // Adding :
@@ -91,7 +91,14 @@ class App extends React.Component {
     let output = this.state.selectedSongList.map(song => {
       return "\n" + song.title;
     });
-    output[0] = output[0].substring(1); /* remove the first \n */
+
+    if (!output[0]) {
+      // If we try to export empty list, we dont do anything
+      return;
+    }
+
+    // remove the first \n
+    output[0] = output[0].substring(1);
     alert(output);
 
     if (reset) {
@@ -143,7 +150,7 @@ class App extends React.Component {
               ></iframe>
               <i>for inspiration purpose</i>
             </div>
-              <ValidatePlaylistButton validatePlaylist={this.validatePlaylist} />
+            <ValidatePlaylistButton validatePlaylist={this.validatePlaylist} />
           </div>
           {/* Right Part : selected song */}
           <div className="split">

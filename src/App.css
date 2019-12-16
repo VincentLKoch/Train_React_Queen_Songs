@@ -50,7 +50,7 @@ body {
   align-items: center;
   position: relative;
   padding: 0 0 7px;
-  color: white
+  color: white;
 }
 
 .song-list {
@@ -62,7 +62,6 @@ body {
   margin: 0 -17px;
   border-radius: 14px;
   box-shadow: 0 0 5px gold inset;
-  text-align: left;
 }
 
 .song-row {
@@ -88,8 +87,6 @@ body {
   box-shadow: 0 0 5px gold inset;
   text-align: center;
 }
-
-/* Following CSS is to have a nice switch, adapted from https://stackoverflow.com/a/39846603 : */
 
 /* definition of the container */
 .switch {
@@ -178,7 +175,7 @@ input:checked + .slider:after {
   width: 160px;
   height: 60px;
   background-color: black;
-  color: white;
+  color: gold;
   border-color: goldenrod;
   border-width: 5px;
   margin-bottom: 10px;

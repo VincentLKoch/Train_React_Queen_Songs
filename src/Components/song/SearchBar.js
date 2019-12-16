@@ -14,7 +14,6 @@ export class SearchBar extends Component {
   render() {
     return (
       <form className="searchBar">
-        {/* flex box */}
         <input
           type="text"
           name="searchBar"
@@ -23,7 +22,6 @@ export class SearchBar extends Component {
           onChange={this.onChange}
           className="input"
         />
-        {/* flex:10 */}
       </form>
     );
   }
