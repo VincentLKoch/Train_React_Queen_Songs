@@ -1,0 +1,2937 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Snapshoot: Render correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="header"
+  >
+    Queens playlist selector
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="split"
+    >
+      <form
+        className="search-bar"
+      >
+        <input
+          className="input"
+          name="searchBar"
+          onChange={[Function]}
+          placeholder="Filter by Song Name"
+          type="text"
+          value=""
+        />
+      </form>
+      <div
+        className="song-list"
+      >
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            '39
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            A Dozen Red Roses For My Darling
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            A Human Body
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            A Kind of Magic
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            A Winter's Tale
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Action This Day
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            All Dead, All Dead
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            All God's People
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Another One Bites the Dust
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Arboria (Planet of the Tree Men)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Back Chat
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Battle Theme
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Bicycle Race
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Bijou
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Body Language
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Bohemian Rhapsody
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Breakthru
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Brighton Rock
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Bring Back That Leroy Brown
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Calling All Girls
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Chinese Torture
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Coming Soon
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Cool Cat
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Crash Dive On Mingo City
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Crazy Little Thing Called Love
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Dancer
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Dead On Time
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Dear Friends
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Death on Two Legs (Dedicated to...)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Delilah
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Doing All Right
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Don't Lose Your Head
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Don't Stop Me Now
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Don't Try So Hard
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Don't Try Suicide
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Dragon Attack
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Dreamer's Ball
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Drowse
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Escape from the Swamp
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Execution of Flash
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Fat Bottomed Girls
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Father to Son
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Feelings, Feelings
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Fight from the Inside
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Flash to the Rescue
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Flash's Theme
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Flash's Theme Reprise (Victory Celebrations)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Flick of the Wrist
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Football Fight
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Friends Will Be Friends
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Fun It
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Funny How Love Is
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Get Down, Make Love
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Gimme the Prize (Kurgan's Theme)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            God Save the Queen
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Good Company
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Good Old-Fashioned Lover Boy
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Great King Rat
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Hammer to Fall
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Hang On in There
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Headlong
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Heaven for Everyone
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Hijack My Heart
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            I Can't Live With You
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            I Go Crazy
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            I Want It All
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            I Want to Break Free
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            I Was Born To Love You
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            I'm Going Slightly Mad
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            I'm in Love with My Car
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            If You Can't Beat Them
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Impromptu
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            In Only Seven Days
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            In the Death Cell (Love Theme Reprise)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            In the Lap of the Gods
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            In the Lap of the Gods... Revisited
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            In the Space Capsule (The Love Theme)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Innuendo
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Is This the World We Created...?
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            It's a Beautiful Day
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            It's a Beautiful Day (Reprise)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            It's a Hard Life
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            It's Late
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Jealousy
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Jesus
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Keep Passing the Open Windows
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Keep Yourself Alive
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Khashoggi's Ship
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Killer Queen
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Las Palabras de Amor (The Words of Love)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Lazing on a Sunday Afternoon
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Leaving Home Ain't Easy
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Let Me Entertain You
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Let Me In Your Heart Again
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Let Me Live
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Liar
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Life Is Real (Song For Lennon)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Lily of the Valley
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Long Away
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Lost Opportunity
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Love Kills
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Love of My Life
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Machines (or 'Back to Humans')
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Mad the Swine
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Made In Heaven
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Man on the Prowl
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Marriage of Dale & Ming (And Flash Approaching)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Ming's Theme (In the Court of Ming the Merciless)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Misfire
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Modern Times Rock 'n' Roll
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            More of That Jazz
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Mother Love
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Mustapha
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            My Baby Does Me
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            My Fairy King
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            My Life Has Been Saved
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            My Melancholy Blues
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Need Your Loving Tonight
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Nevermore
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            No-One But You (Only the Good Die Young)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Now I'm Here
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Ogre Battle
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            One Vision
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            One Vision
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            One Year of Love
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Pain Is So Close to Pleasure
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Party
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Play the Game
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Princes of the Universe
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Procession
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Put Out the Fire
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Radio Ga Ga
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Rain Must Fall
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Ride the Wild Wind
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Rock It (Prime Jive)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Sail Away, Sweet Sister
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Save Me
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Scandal
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Seaside Rendezvous
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            See What a Fool I've Been
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Seven Seas of Rhye
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            She Makes Me (Stormtrooper in Stilettoes)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Sheer Heart Attack
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Sleeping on the Sidewalk
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Some Day, One Day
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Somebody to Love
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Son & Daughter
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Soul Brother
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Spread Your Wings
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Staying Power
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Stealin'
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Stone Cold Crazy
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Sweet Lady
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Tear It Up
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Tenement Funster
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Teo Torriatte (Let Us Cling Together)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Thank God It's Christmas
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Fairy Feller's Master-Stroke
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Hero
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Hitman
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Invisible Man
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Kiss (Aura Resurrects Flash)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Loser in the End
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The March of the Black Queen
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Millionaire Waltz
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Miracle
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Night Comes Down
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Prophet's Song
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Ring (Hypnotic Seduction of Dale)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Show Must Go On
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            The Wedding March
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            These Are the Days of Our Lives
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Tie Your Mother Down
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Too Much Love Will Kill You
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Track 13
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Under Pressure
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Vultan's Theme (Attack of the Hawk Men)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Was It All Worth It
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            We Are the Champions
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            We Will Rock You
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            White Man
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            White Queen (As It Began)
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Who Needs You
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Who Wants to Live Forever
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            Yeah
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            You And I
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            You Don't Fool Me
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            You Take My Breath Away
+          </p>
+        </div>
+        <div
+          className="song-row"
+          style={Object {}}
+        >
+          <p>
+            <input
+              checked={false}
+              className="checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+             
+            You're My Best Friend
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="split"
+    >
+      <img
+        alt="logo"
+        id="logo"
+        src="../images/logo_queen.png"
+      />
+      <div
+        className="playing-frame"
+      >
+        <iframe
+          frameBorder="0"
+          height="500"
+          scrolling="no"
+          src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=450&height=500&color=fffb00&layout=dark&size=medium&type=playlist&id=4696861764&app_id=1"
+          title="Playlist"
+          width="400"
+        />
+        <i>
+          for inspiration purpose
+        </i>
+      </div>
+      <div>
+        <button
+          id="validate"
+          onClick={[Function]}
+          type="button"
+        >
+          Validate Playlist
+        </button>
+        <br />
+        <label
+          className="switch"
+        >
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="slider round"
+          />
+        </label>
+      </div>
+    </div>
+    <div
+      className="split"
+    >
+      <form
+        className="search-bar"
+      >
+        <input
+          className="input"
+          name="searchBar"
+          onChange={[Function]}
+          placeholder="Filter by Song Name"
+          type="text"
+          value=""
+        />
+      </form>
+      <div
+        className="song-list"
+      />
+    </div>
+  </div>
+</div>
+`;
