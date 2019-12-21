@@ -3,9 +3,12 @@ import PropTypes from "prop-types";
 
 export const Song = props => {
   const getStyle = selected => {
-    return selected && !props.isSelectedList
+    if (selected && !props.isSelectedList) {
+      return id % 2 == 1
       ? { backgroundColor: "lightblue" }
-      : {};
+        : { backgroundColor: "lightyellow" };
+    }
+    return {};
   };
 
   const { id, title, selected } = props.song;
