@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-export class Validate_Playlist_Button extends Component {
+class ValidatePlaylistButton extends Component {
   state = {
     resetChecked: false
   };
@@ -36,8 +36,8 @@ export class Validate_Playlist_Button extends Component {
 }
 
 // PropsTypes
-Validate_Playlist_Button.propTypes = {
+ValidatePlaylistButton.propTypes = {
   validatePlaylist: PropTypes.func.isRequired // onClick function call
 };
 
-export default Validate_Playlist_Button;
+export default ValidatePlaylistButton;

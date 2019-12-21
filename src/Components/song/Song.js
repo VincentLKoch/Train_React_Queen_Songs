@@ -1,32 +1,29 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
-export class Song extends Component {
-  getStyle = selected => {
-    return selected && !this.props.isSelectedList
+export const Song = props => {
+  const getStyle = selected => {
+    return selected && !props.isSelectedList
       ? { backgroundColor: "lightblue" }
       : {};
   };
 
-  render() {
-    const { id, title, selected } = this.props.song;
-
-    return (
-      <div className="song-row" style={this.getStyle(selected)}>
-        <p>
-          <input
-            type="checkbox"
-            className="checkbox"
-            checked={selected} // allow check box match selected, in case of a selected = true when launching
-            onChange={this.props.selectSong.bind(this, id)}
-          />
-          &nbsp;
-          {title}
-        </p>
-      </div>
-    );
-  }
-}
+  const { id, title, selected } = props.song;
+  return (
+    <div className="song-row" style={getStyle(selected)}>
+      <p>
+        <input
+          type="checkbox"
+          className="checkbox"
+          checked={selected} // allow check box match selected, in case of a selected = true when launching
+          onChange={props.selectSong.bind(this, id)}
+        />
+        &nbsp;
+        {title}
+      </p>
+    </div>
+  );
+};
 
 // PropsTypes
 Song.propTypes = {
