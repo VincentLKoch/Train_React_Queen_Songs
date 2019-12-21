@@ -141,10 +141,11 @@ describe("Testing Snapshoot:", () => {
         expect(validateDiv.children.length).toBe(3); // button, br, switch
 
         //button :
-        expect(validateDiv.children[0].type).toBe("button");
         expect(validateDiv.children[0].props).toEqual({
           id: "validate",
           type: "button",
+          variant: "contained",
+          color: "primary",
           onClick: expect.any(Function),
           children: "Validate Playlist" //text of the button
         });

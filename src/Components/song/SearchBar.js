@@ -1,37 +1,28 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
-class SearchBar extends Component {
-  state = {
-    //TODO change title to props input, onchange is a props function to change then make this component stateless
-    title: ""
+export const SearchBar = props => {
+  const onChange = e => {
+    props.filterList(e.target.value, props.isSelectedSongList);
   };
 
-  onChange = e => {
-    this.setState({ title: e.target.value });
-    this.props.filterList(e.target.value, this.props.isSelectedSongList);
-  };
-
-  render() {
-    return (
-      <form className="search-bar">
-        <input
-          type="text"
-          name="searchBar"
-          placeholder="Filter by Song Name"
-          value={this.state.title}
-          onChange={this.onChange}
-          className="input"
-        />
-      </form>
-    );
-  }
-}
+  return (
+    <form className="search-bar">
+      <input
+        type="text"
+        name="searchBar"
+        placeholder="Filter by Song Name"
+        value={props.filterContent}
+        onChange={onChange}
+        className="input"
+      />
+    </form>
+  );
+};
 
 // PropsTypes
 SearchBar.propTypes = {
+  filterContent: PropTypes.string.isRequired,
   isSelectedSongList: PropTypes.bool.isRequired,
   filterList: PropTypes.func.isRequired
 };
-
-export default SearchBar;

@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Button from '@material-ui/core/Button';
+import Button from "@material-ui/core/Button";
 
-export const Song = props => {
+const Song = props => {
   const getStyle = selected => {
     if (selected && !props.isSelectedList) {
-      return id % 2 == 1
-      ? { backgroundColor: "lightblue" }
-        : { backgroundColor: "lightyellow" };
+      return id % 2 === 1
+        ? { backgroundColor: "lightblue" }
+        : { backgroundColor: "#f3eba5" };
     }
     return {};
   };
@@ -17,11 +17,12 @@ export const Song = props => {
     <div className="song-row" style={getStyle(selected)}>
       <p>
         <Button
-          fullWidth="true"
+          fullWidth={true}
           type="button"
           id="song"
-          checked={selected} // allow check box match selected, in case of a selected = true when launching
-          onClick={props.selectSong.bind(this, id)}>
+          checked={selected} // allow check box match selected, in case of a selected = true when launching
+          onClick={props.selectSong.bind(this, id)}
+        >
           {title}
         </Button>
       </p>

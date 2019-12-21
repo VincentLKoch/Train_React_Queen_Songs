@@ -1,10 +1,9 @@
 import React from "react";
 
-// Components : Stateless
+// Components : (all Stateless)
 import { SongList } from "./song/SongList";
-// Components with State :
-import ValidatePlaylistButton from "./ValidatePlaylistButton";
-import SearchBar from "./song/SearchBar";
+import { ValidatePlaylistButton } from "./ValidatePlaylistButton";
+import { SearchBar } from "./song/SearchBar";
 
 // Others
 import { allSongs } from "../songs";
@@ -19,9 +18,12 @@ class Home extends React.Component {
   constructor() {
     super();
 
+    //Home is the only component with state
     this.state = {
       allSongList: allSongsObject, // allSongsObject stay as the complete list, allSongList can be filter
-      selectedSongList: []
+      selectedSongList: [],
+      resetChecked: false, // Switch if we reset when export
+      filterContent: ["", ""] //text content of the filter bar
     };
     /*
     this.selectedSongShadowList = this.state.selectedSongList if there is no filter
@@ -33,6 +35,7 @@ class Home extends React.Component {
   //Toggle selectSong song
   selectSong = id => {
     this.setState({
+      filterContent: ["", ""], //reset filter
       allSongList: allSongsObject.map(song => {
         if (song.id === id) {
           this.handleSongInSelectedList(song);
@@ -73,12 +76,14 @@ class Home extends React.Component {
     /* if the search bar is for filtering the selected song list or the other */
     if (isSelectedSongList) {
       this.setState({
+        filterContent: [this.state.filterContent[0], title.toLowerCase()],
         selectedSongList: this.selectedSongShadowList.filter(songItem => {
           return songItem.title.toLowerCase().includes(title.toLowerCase());
         })
       });
     } else {
       this.setState({
+        filterContent: [title.toLowerCase(), this.state.filterContent[1]],
         allSongList: allSongsObject.filter(songItem => {
           return songItem.title.toLowerCase().includes(title.toLowerCase());
         })
@@ -87,7 +92,7 @@ class Home extends React.Component {
   };
 
   // When we press the submit button
-  validatePlaylist = reset => {
+  validatePlaylist = () => {
     let output = this.selectedSongShadowList.map(song => {
       return "\n" + song.title;
     });
@@ -101,7 +106,7 @@ class Home extends React.Component {
     output[0] = output[0].substring(1);
     alert(output);
 
-    if (reset) {
+    if (this.state.resetChecked) {
       // Reset all song selected
       this.selectedSongShadowList = [];
 
@@ -115,12 +120,21 @@ class Home extends React.Component {
     }
   };
 
+  //Switch if we reset when exporting
+  changeResetChecked = () => {
+    this.setState({ resetChecked: !this.state.resetChecked });
+  };
+
   render() {
     return (
       <div className="container">
         {/* Left Part : all songs */}
         <div className="split">
-          <SearchBar isSelectedSongList={false} filterList={this.filterList} />
+          <SearchBar
+            filterContent={this.state.filterContent[0]}
+            isSelectedSongList={false}
+            filterList={this.filterList}
+          />
           <div className="song-list">
             <SongList
               isSelectedList={false}
@@ -143,11 +157,19 @@ class Home extends React.Component {
               height="500"
             ></iframe>
           </div>
-          <ValidatePlaylistButton validatePlaylist={this.validatePlaylist} />
+          <ValidatePlaylistButton
+            validatePlaylist={this.validatePlaylist}
+            resetChecked={this.state.resetChecked}
+            changeResetChecked={this.changeResetChecked}
+          />
         </div>
         {/* Right Part : selected song */}
         <div className="split">
-          <SearchBar isSelectedSongList={true} filterList={this.filterList} />
+          <SearchBar
+            filterContent={this.state.filterContent[1]}
+            isSelectedSongList={true}
+            filterList={this.filterList}
+          />
           <div className="song-list">
             <SongList
               isSelectedList={true}

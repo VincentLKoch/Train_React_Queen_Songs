@@ -1,45 +1,35 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import Button from '@material-ui/core/Button';
+import Button from "@material-ui/core/Button";
 
-class ValidatePlaylistButton extends Component {
-  state = {
-    resetChecked: false
-  };
-
-  render() {
-    return (
-      <div>
-        <Button
-          variant="contained"
-          color="primary"
-          id="validate"
-          type="button"
-          onClick={this.props.validatePlaylist.bind(
-            this,
-            this.state.resetChecked
-          )}>
-          Validate Playlist
-        </Button>
-        <br />
-        <label className="switch">
-          <input
-            type="checkbox"
-            checked={this.state.resetChecked}
-            onChange={() =>
-              this.setState({ resetChecked: !this.state.resetChecked })
-            }
-          />
-          <span className="slider round" />
-        </label>
-      </div >
-    );
-  }
-}
+export const ValidatePlaylistButton = props => {
+  return (
+    <div>
+      <Button
+        variant="contained"
+        color="primary"
+        id="validate"
+        type="button"
+        onClick={props.validatePlaylist}
+      >
+        Validate Playlist
+      </Button>
+      <br />
+      <label className="switch">
+        <input
+          type="checkbox"
+          checked={props.resetChecked}
+          onChange={props.changeResetChecked}
+        />
+        <span className="slider round" />
+      </label>
+    </div>
+  );
+};
 
 // PropsTypes
 ValidatePlaylistButton.propTypes = {
-  validatePlaylist: PropTypes.func.isRequired // onClick function call
+  validatePlaylist: PropTypes.func.isRequired, // onClick function call
+  resetChecked: PropTypes.bool.isRequired, // is it checked ?
+  changeResetChecked: PropTypes.func.isRequired //function to call when we click
 };
-
-export default ValidatePlaylistButton;
