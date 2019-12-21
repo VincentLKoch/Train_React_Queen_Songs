@@ -2886,9 +2886,6 @@ exports[`Testing Snapshoot: Render correctly 1`] = `
           title="Playlist"
           width="400"
         />
-        <i>
-          for inspiration purpose
-        </i>
       </div>
       <div>
         <button

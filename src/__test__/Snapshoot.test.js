@@ -113,7 +113,7 @@ describe("Testing Snapshoot:", () => {
         expect(PlayingFrame.type).toBe("div");
         expect(PlayingFrame.props.className).toBe("playing-frame");
 
-        expect(PlayingFrame.children.length).toBe(2); //iframe, and italic text
+        expect(PlayingFrame.children.length).toBe(1); //iframe
 
         // iframe
         expect(PlayingFrame.children[0].type).toBe("iframe");
@@ -125,12 +125,6 @@ describe("Testing Snapshoot:", () => {
           width: expect.any(String),
           height: expect.any(String)
         });
-
-        // italic text :
-        expect(PlayingFrame.children[1].type).toBe("i");
-        expect(PlayingFrame.children[1].children).toEqual([
-          "for inspiration purpose"
-        ]);
       });
 
       it("test Export Button", () => {
