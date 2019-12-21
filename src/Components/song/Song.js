@@ -12,15 +12,14 @@ export const Song = props => {
   return (
     <div className="song-row" style={getStyle(selected)}>
       <p>
-        <input
-          type="checkbox"
-          className="checkbox"
-          checked={selected} // allow check box match selected, in case of a selected = true when launching
-          onChange={props.selectSong.bind(this, id)}
-        />
+        <label for="song"> {title}</label>
+        <input 
+          type="checkbox" 
+          id="song"
+          checked={selected} // allow check box match selected, in case of a selected = true when launching
+          onChange={props.selectSong.bind(this, id)} />
         &nbsp;
-        {title}
-      </p>
+      </p>     
     </div>
   );
 };
