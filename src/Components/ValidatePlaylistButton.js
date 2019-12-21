@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import Button from '@material-ui/core/Button';
 
 class ValidatePlaylistButton extends Component {
   state = {
@@ -9,16 +10,17 @@ class ValidatePlaylistButton extends Component {
   render() {
     return (
       <div>
-        <button
+        <Button
+          variant="contained"
+          color="primary"
           id="validate"
           type="button"
           onClick={this.props.validatePlaylist.bind(
             this,
             this.state.resetChecked
-          )}
-        >
+          )}>
           Validate Playlist
-        </button>
+        </Button>
         <br />
         <label className="switch">
           <input
@@ -30,7 +32,7 @@ class ValidatePlaylistButton extends Component {
           />
           <span className="slider round" />
         </label>
-      </div>
+      </div >
     );
   }
 }

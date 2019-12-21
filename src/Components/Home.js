@@ -142,7 +142,6 @@ class Home extends React.Component {
               width="400"
               height="500"
             ></iframe>
-            <i>for inspiration purpose</i>
           </div>
           <ValidatePlaylistButton validatePlaylist={this.validatePlaylist} />
         </div>
