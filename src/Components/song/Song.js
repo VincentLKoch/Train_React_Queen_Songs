@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Button from '@material-ui/core/Button';
 
 export const Song = props => {
   const getStyle = selected => {
@@ -15,14 +16,15 @@ export const Song = props => {
   return (
     <div className="song-row" style={getStyle(selected)}>
       <p>
-        <label for="song"> {title}</label>
-        <input 
-          type="checkbox" 
+        <Button
+          fullWidth="true"
+          type="button"
           id="song"
           checked={selected} // allow check box match selected, in case of a selected = true when launching
-          onChange={props.selectSong.bind(this, id)} />
-        &nbsp;
-      </p>     
+          onClick={props.selectSong.bind(this, id)}>
+          {title}
+        </Button>
+      </p>
     </div>
   );
 };
