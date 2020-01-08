@@ -23,13 +23,12 @@ class Home extends React.Component {
       allSongList: allSongsObject, // allSongsObject stay as the complete list, allSongList can be filter
       selectedSongList: [],
       resetChecked: false, // Switch if we reset when export
-      filterContent: ["", ""] //text content of the filter bar
+      filterContent: ["", ""], //text content of the filter bar
+      /*
+      selectedSongShadowList stock the complete list of selected song, we use it to filter selectedSongList
+      */
+      selectedSongShadowList: []
     };
-    /*
-    this.selectedSongShadowList = this.state.selectedSongList if there is no filter
-    it stock the complete list of selected song, we use it to filter selectedSongList
-    */
-    this.selectedSongShadowList = [];
   }
 
   //Toggle selectSong song
@@ -51,23 +50,22 @@ class Home extends React.Component {
   handleSongInSelectedList = song => {
     if (!song.selected) {
       // Adding :
-      this.selectedSongShadowList = [...this.selectedSongShadowList, song];
+      const newSelectedList = [...this.state.selectedSongShadowList, song];
       this.setState({
-        selectedSongList: [...this.selectedSongShadowList]
+        selectedSongShadowList: newSelectedList,
+        selectedSongList: newSelectedList
       });
     } else {
       // Removing
+      const newSelectedList = [
+        ...this.state.selectedSongShadowList.filter(
+          songItem => songItem.id !== song.id
+        )
+      ];
       this.setState({
-        selectedSongList: [
-          ...this.state.selectedSongList.filter(
-            songItem => songItem.id !== song.id
-          )
-        ]
+        selectedSongShadowList: newSelectedList,
+        selectedSongList: newSelectedList
       });
-      //update selectedSongShadowList
-      this.selectedSongShadowList = this.selectedSongShadowList.filter(
-        songItem => songItem.id !== song.id
-      );
     }
   };
 
@@ -77,7 +75,7 @@ class Home extends React.Component {
     if (isSelectedSongList) {
       this.setState({
         filterContent: [this.state.filterContent[0], title.toLowerCase()],
-        selectedSongList: this.selectedSongShadowList.filter(songItem => {
+        selectedSongList: this.state.selectedSongShadowList.filter(songItem => {
           return songItem.title.toLowerCase().includes(title.toLowerCase());
         })
       });
@@ -93,7 +91,7 @@ class Home extends React.Component {
 
   // When we press the submit button
   validatePlaylist = () => {
-    let output = this.selectedSongShadowList.map(song => {
+    let output = this.state.selectedSongShadowList.map(song => {
       return "\n" + song.title;
     });
 
@@ -108,9 +106,8 @@ class Home extends React.Component {
 
     if (this.state.resetChecked) {
       // Reset all song selected
-      this.selectedSongShadowList = [];
-
       this.setState({
+        selectedSongShadowList: [],
         selectedSongList: [],
         allSongList: this.state.allSongList.map(song => {
           song.selected = false;
