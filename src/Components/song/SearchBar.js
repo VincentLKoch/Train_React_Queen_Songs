@@ -15,6 +15,11 @@ export const SearchBar = props => {
         value={props.filterContent}
         onChange={onChange}
         className="input"
+        onKeyPress={e => {
+          if (e.key === "Enter") {
+            e.preventDefault();
+          }
+        }}
       />
     </form>
   );
