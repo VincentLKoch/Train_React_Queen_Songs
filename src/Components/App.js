@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
 // Components : Stateless
-import { Header } from "./Components/layout/Header";
+import { Header } from "./layout/Header";
 // Most of the logic are in home page module
-import Home from "./Components/Home";
+import Home from "./Home";
 
 // Others
-import "./App.css";
+import "../App.css";
 
 class App extends React.Component {
   render() {

@@ -1,34 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
+import { connect } from "react-redux";
 
-const Song = props => {
-  const getStyle = selected => {
-    if (selected && !props.isSelectedList) {
-      return id % 2 === 1
-        ? { backgroundColor: "lightblue" }
-        : { backgroundColor: "#f3eba5" };
-    }
-    return {};
-  };
+import { selectSongAction } from "../../actions/selectSongAction";
+import { resetFiltersAction } from "../../actions/resetFiltersAction";
 
-  const { id, title, selected } = props.song;
-  return (
-    <div className="song-row" style={getStyle(selected)}>
-      <p>
+class Song extends React.Component {
+  render() {
+    return (
+      <div className="song-row" style={this.props.style}>
         <Button
           fullWidth={true}
           type="button"
           id="song"
-          checked={selected} // allow check box match selected, in case of a selected = true when launching
-          onClick={props.selectSong.bind(this, id)}
+          checked={this.props.song.selected} // allow check box match selected, in case of a selected = true when launching
+          onClick={() => this.props.selectSong(this.props.song)}
         >
-          {title}
+          {this.props.song.title}
         </Button>
-      </p>
-    </div>
-  );
-};
+      </div>
+    );
+  }
+}
 
 // PropsTypes
 Song.propTypes = {
@@ -38,9 +32,33 @@ Song.propTypes = {
     title: PropTypes.string.isRequired,
     selected: PropTypes.bool.isRequired
   }).isRequired,
-
   isSelectedList: PropTypes.bool.isRequired,
-  selectSong: PropTypes.func.isRequired // function to call when song is selected
+  style: PropTypes.object.isRequired
 };
 
-export default Song;
+//Redux
+const mapStateToProps = (state, ownprops) => {
+  let style = {}; //must be here or style is only render on load => don't change
+  if (ownprops.song.selected && !ownprops.isSelectedList) {
+    style =
+      ownprops.song.id % 2 === 1
+        ? { backgroundColor: "lightblue" }
+        : { backgroundColor: "#f3eba5" };
+  }
+  return {
+    song: ownprops.song,
+    isSelectedList: ownprops.isSelectedList,
+    style
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    selectSong: id => {
+      dispatch(selectSongAction(id));
+      dispatch(resetFiltersAction());
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Song);

@@ -1,9 +1,9 @@
 import React from "react";
 
 // Components : (all Stateless)
-import { SongList } from "./song/SongList";
+import SongList from "./song/SongList";
 import { ValidatePlaylistButton } from "./ValidatePlaylistButton";
-import { SearchBar } from "./song/SearchBar";
+import SearchBar from "./song/SearchBar";
 
 // Others
 import { allSongs } from "../songs";
@@ -15,58 +15,16 @@ for (let it = 0; it < allSongs.length; it++) {
 }
 
 class Home extends React.Component {
-  constructor() {
-    super();
-
-    //Home is the only component with state
-    this.state = {
-      allSongList: allSongsObject, // allSongsObject stay as the complete list, allSongList can be filter
-      selectedSongList: [],
-      resetChecked: false, // Switch if we reset when export
-      filterContent: ["", ""], //text content of the filter bar
-      /*
+  //Home is the only component with state
+  state = {
+    allSongList: allSongsObject, // allSongsObject stay as the complete list, allSongList can be filter
+    selectedSongList: [],
+    resetChecked: false, // Switch if we reset when export
+    filterContent: ["", ""], //text content of the filter bar
+    /*
       selectedSongShadowList stock the complete list of selected song, we use it to filter selectedSongList
       */
-      selectedSongShadowList: []
-    };
-  }
-
-  //Toggle selectSong song
-  selectSong = id => {
-    this.setState({
-      filterContent: ["", ""], //reset filter
-      allSongList: allSongsObject.map(song => {
-        if (song.id === id) {
-          this.handleSongInSelectedList(song);
-          song.selected = !song.selected; // song is now selected or unselected
-        }
-        return song;
-      })
-    });
-  };
-
-  /* add or remove song in selected list
-  Can be combine with selectSong but it will be a bit ugly */
-  handleSongInSelectedList = song => {
-    if (!song.selected) {
-      // Adding :
-      const newSelectedList = [...this.state.selectedSongShadowList, song];
-      this.setState({
-        selectedSongShadowList: newSelectedList,
-        selectedSongList: newSelectedList
-      });
-    } else {
-      // Removing
-      const newSelectedList = [
-        ...this.state.selectedSongShadowList.filter(
-          songItem => songItem.id !== song.id
-        )
-      ];
-      this.setState({
-        selectedSongShadowList: newSelectedList,
-        selectedSongList: newSelectedList
-      });
-    }
+    selectedSongShadowList: []
   };
 
   // filterList with search bar input:
@@ -127,17 +85,9 @@ class Home extends React.Component {
       <div className="container">
         {/* Left Part : all songs */}
         <div className="split">
-          <SearchBar
-            filterContent={this.state.filterContent[0]}
-            isSelectedSongList={false}
-            filterList={this.filterList}
-          />
+          <SearchBar isSelectedSongList={false} />
           <div className="song-list">
-            <SongList
-              isSelectedList={false}
-              songlist={this.state.allSongList}
-              selectSong={this.selectSong}
-            />
+            <SongList isSelectedList={false} />
           </div>
         </div>
         {/* Middle Part : logo, player and valided button */}
@@ -145,14 +95,14 @@ class Home extends React.Component {
           <img alt="logo" id="logo" src="../images/logo_queen.png"></img>
           {/* Spotify changed for Deezer because why not (and deezer is french)*/}
           <div className="playing-frame">
-            <iframe
+            {/* <iframe
               title="Playlist"
               scrolling="no"
               frameBorder="0"
               src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=450&height=500&color=fffb00&layout=dark&size=medium&type=playlist&id=4696861764&app_id=1"
               width="400"
               height="500"
-            ></iframe>
+            /> TODO */}
           </div>
           <ValidatePlaylistButton
             validatePlaylist={this.validatePlaylist}
@@ -162,17 +112,9 @@ class Home extends React.Component {
         </div>
         {/* Right Part : selected song */}
         <div className="split">
-          <SearchBar
-            filterContent={this.state.filterContent[1]}
-            isSelectedSongList={true}
-            filterList={this.filterList}
-          />
+          <SearchBar isSelectedSongList={true} />
           <div className="song-list">
-            <SongList
-              isSelectedList={true}
-              songlist={this.state.selectedSongList}
-              selectSong={this.selectSong}
-            />
+            <SongList isSelectedList={true} />
           </div>
         </div>
       </div>

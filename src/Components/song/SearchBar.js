@@ -1,29 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
-export const SearchBar = props => {
-  const onChange = e => {
-    props.filterList(e.target.value, props.isSelectedSongList);
-  };
+import { filterSongsAction } from "../../actions/filterSongsAction";
 
-  return (
-    <form className="search-bar">
-      <input
-        type="text"
-        name="searchBar"
-        placeholder="Filter by Song Name"
-        value={props.filterContent}
-        onChange={onChange}
-        className="input"
-        onKeyPress={e => {
-          if (e.key === "Enter") {
-            e.preventDefault();
+class SearchBar extends React.Component {
+  render() {
+    return (
+      <form className="search-bar">
+        <input
+          type="text"
+          name="searchBar"
+          placeholder="Filter by Song Name"
+          value={this.props.filterContent}
+          onChange={e =>
+            this.props.filterList(e.target.value, this.props.isSelectedSongList)
           }
-        }}
-      />
-    </form>
-  );
-};
+          className="input"
+          onKeyPress={e => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+            }
+          }}
+        />
+      </form>
+    );
+  }
+}
 
 // PropsTypes
 SearchBar.propTypes = {
@@ -31,3 +34,20 @@ SearchBar.propTypes = {
   isSelectedSongList: PropTypes.bool.isRequired,
   filterList: PropTypes.func.isRequired
 };
+
+const mapStateToProps = (state, ownprops) => {
+  return {
+    filterContent: state.filterSongs.filter[+ownprops.isSelectedSongList],
+    isSelectedSongList: ownprops.isSelectedSongList
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    filterList: (content, isSelectedList) => {
+      dispatch(filterSongsAction(content, isSelectedList));
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
