@@ -1,9 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
-// Components : Stateless
+//Components
 import { Header } from "./layout/Header";
-// Most of the logic are in home page module
 import Home from "./Home";
 
 // Others

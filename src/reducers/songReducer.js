@@ -1,6 +1,7 @@
 import { allSongs } from "../songs";
 
 import { SELECT_SONG } from "../actions/selectSongAction";
+import { VALIDATE_PLAYLIST } from "../actions/validatePlaylistAction";
 
 const allSongsObject = [];
 for (let it = 0; it < allSongs.length; it++) {
@@ -8,7 +9,7 @@ for (let it = 0; it < allSongs.length; it++) {
 }
 const initialState = {
   songsList: allSongsObject,
-  selectedSongList: [] //TODO is it needed ?
+  selectedSongList: []
 };
 
 const newSelectedList = (selectedSongList, song) => {
@@ -33,7 +34,27 @@ export default (state = initialState, action) => {
           state.selectedSongList,
           action.payload
         )
-      };
+      }; //end case SELECT_SONG:
+
+    case VALIDATE_PLAYLIST:
+      let output = state.selectedSongList.map(song => {
+        return "\n" + song.title;
+      });
+      if (output[0]) {
+        //dont do empty alert
+        output[0] = output[0].substring(1); //remove first \n
+        alert(output);
+      }
+
+      return {
+        ...state,
+        songsList: state.songsList.map(song => {
+          song.selected = false;
+          return song;
+        }),
+        selectedSongList: action.payload ? [] : state.selectedSongList //reset if need
+      }; //end case VALIDATE_PLAYLIST:
+
     default:
       return state;
   }
