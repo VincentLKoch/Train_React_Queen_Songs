@@ -56,8 +56,8 @@ const mapStateToProps = (state, ownprops) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    selectSong: id => {
-      dispatch(selectSongAction(id));
+    selectSong: song => {
+      dispatch(selectSongAction(song));
       dispatch(resetFiltersAction());
     }
   };

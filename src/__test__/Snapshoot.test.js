@@ -1,10 +1,20 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import App from "../App";
+import App from "../Components/App";
+
+import { createStore } from "redux";
+import { Provider, connect } from "react-redux";
+import rootReducer from "../reducers/rootReducer";
+
+const store = createStore(rootReducer);
 
 describe("Testing Snapshoot:", () => {
-  const testRenderer = renderer.create(<App />);
+  const testRenderer = renderer.create(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
   const testInstance = testRenderer.root;
 
   it("Render correctly", () => {
@@ -44,7 +54,7 @@ describe("Testing Snapshoot:", () => {
         expect(search.length).toBe(2);
       });
 
-      it.each([0, 1])("test Search Bar number(%i)", input => {
+      it.each([0, 1])("test Search Bar number %i", input => {
         expect(search[input].type).toBe("form"); //It's a form
         expect(search[input].children.length).toBe(1); //With only one child
 
@@ -55,6 +65,7 @@ describe("Testing Snapshoot:", () => {
           placeholder: "Filter by Song Name",
           value: "",
           onChange: expect.any(Function),
+          onKeyPress: expect.any(Function),
           className: "input"
         });
       });
@@ -72,11 +83,12 @@ describe("Testing Snapshoot:", () => {
       it.each([
         [0, 189],
         [1, 0]
-      ])("test Song List number(%i)", (input, expected) => {
+      ])("test Song List number %i", (input, expected) => {
         expect(songLists[input].type).toBe("div"); //It's a div
         expect(songLists[input].children.length).toBe(1); //With only one child
 
-        const songListChild = songLists[input].children[0]; //reduce code verbose
+        const songListChild = songLists[input].children[0].children[0]; //reduce code verbose, we skip test on redux child
+
         expect(songListChild.children.length).toBe(expected); //Number of song expected (189 or 0)
         expect(songListChild.props.isSelectedList).toBe(Boolean(input));
 
@@ -128,14 +140,19 @@ describe("Testing Snapshoot:", () => {
       });
 
       it("test Export Button", () => {
-        expect(splitPart[1].children[2].props.validatePlaylist).toEqual(
-          expect.any(Function)
-        );
+        // adding .children[0] cause of redux :
+        const valPlaylistComp = splitPart[1].children[2].children[0];
 
-        const validateDiv = splitPart[1].children[2].children[0];
+        expect(valPlaylistComp.props).toEqual({
+          isResetChecked: false,
+          changeResetChecked: expect.any(Function),
+          validatePlaylist: expect.any(Function)
+        });
+
+        const validateDiv = valPlaylistComp.children[0];
 
         //Wrapper div:
-        expect(splitPart[1].children[2].children.length).toBe(1);
+        expect(valPlaylistComp.children.length).toBe(1);
         expect(validateDiv.type).toBe("div");
 
         expect(validateDiv.children.length).toBe(3); // button, br, switch

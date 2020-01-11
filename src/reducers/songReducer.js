@@ -10,6 +10,8 @@ for (let it = 0; it < allSongs.length; it++) {
 const initialState = {
   songsList: allSongsObject,
   selectedSongList: []
+  /* We could do without selectedSongList and just filter the songsList,
+  It's a choice to do it like this, a bit more memory heavy, a bit less cpu heavy */
 };
 
 const newSelectedList = (selectedSongList, song) => {
@@ -48,10 +50,12 @@ export default (state = initialState, action) => {
 
       return {
         ...state,
-        songsList: state.songsList.map(song => {
-          song.selected = false;
-          return song;
-        }),
+        songsList: action.payload //reset ?
+          ? state.songsList.map(song => {
+              song.selected = false;
+              return song;
+            })
+          : state.songsList,
         selectedSongList: action.payload ? [] : state.selectedSongList //reset if need
       }; //end case VALIDATE_PLAYLIST:
 
