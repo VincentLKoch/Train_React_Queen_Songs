@@ -32,8 +32,10 @@ Song.propTypes = {
     title: PropTypes.string.isRequired,
     selected: PropTypes.bool.isRequired
   }).isRequired,
+
   isSelectedList: PropTypes.bool.isRequired,
-  style: PropTypes.object.isRequired
+  style: PropTypes.object.isRequired,
+  selectSong: PropTypes.func.isRequired
 };
 
 //Redux

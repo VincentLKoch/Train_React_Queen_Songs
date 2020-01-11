@@ -35,9 +35,9 @@ class ValidatePlaylistButton extends React.Component {
 
 // PropsTypes
 ValidatePlaylistButton.propTypes = {
-  validatePlaylist: PropTypes.func.isRequired, // onClick function call
   isResetChecked: PropTypes.bool.isRequired, // is it checked ?
-  changeResetChecked: PropTypes.func.isRequired //function to call when we click
+  changeResetChecked: PropTypes.func.isRequired, //function to call when we click
+  validatePlaylist: PropTypes.func.isRequired // onClick function call
 };
 
 const mapStateToProps = state => {

@@ -5,15 +5,6 @@ import SongList from "./song/SongList";
 import ValidatePlaylistButton from "./ValidatePlaylistButton";
 import SearchBar from "./song/SearchBar";
 
-// Others
-import { allSongs } from "../songs";
-
-/* Import list of all songs, convert as object with id and selected boolean */
-const allSongsObject = [];
-for (let it = 0; it < allSongs.length; it++) {
-  allSongsObject.push({ id: it + 1, title: allSongs[it], selected: false });
-}
-
 class Home extends React.Component {
   render() {
     return (
